@@ -8,7 +8,7 @@ Cammands on the host machine
 
 // Build the docker image.
 
-docker image build -t <python-docker-image> .
+docker image build -t python-docker-image .
 
 
 
@@ -17,4 +17,4 @@ docker image build -t <python-docker-image> .
 // This allows the code to be sitting on the host machine and accesible via IDE.
 // It also starts a terminal session on the container that I can use to run the application inside the container.
 
-docker run -i -t --rm -v "$(pwd)":/app/. --name <container-name> <python-docker-image> /bin/sh
+docker run -i -t --rm -v "$(pwd)":/app/. --name mycontainer python-docker-image /bin/sh
