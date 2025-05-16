@@ -1,1 +1,6 @@
 requests
+chardet
+pdfminer2
+beautifulsoup4
+Flask==0.10.1
+pyyaml
